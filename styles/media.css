@@ -1,0 +1,406 @@
+@media (max-width:1350px) {
+    .leader_card {
+        padding: 60px 85px 30px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .container {
+        max-width: 1140px;
+        padding: 0 15px;
+    }
+
+    .header {
+        margin-top: 40px;
+    }
+
+    .intro {
+        margin-bottom: 40px;
+    }
+
+    .header_list {
+        display: none;
+    }
+
+    .header_list_fixed {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        bottom: 0;
+        justify-content: space-between;
+        background: #E1E1E1;
+        padding: 15px 50px;
+    }
+
+    .birinchi_element,
+    .uchinchi_element,
+    .beshinchi_element {
+        margin: 0;
+    }
+
+    .intro_card_big {
+        max-width: 600px;
+    }
+
+    .intro_card_textbox {
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .intro_card_cost {
+        padding: 8px 30px;
+    }
+
+    .intro_card_mini {
+        padding: 50px;
+        max-width: 468px;
+    }
+
+    .intro_card_big {
+        flex-direction: column;
+    }
+
+    .intro_card_img {
+        margin-left: 40px;
+    }
+
+    .leader_card {
+        padding: 50px 60px 30px;
+    }
+
+    .leader_card_cost {
+        padding: 8px 30px;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .more_title {
+        margin-bottom: 40px;
+    }
+
+    .footer_box {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:1050px) {
+    .leader_card {
+        padding: 45px;
+    }
+
+    .footer_addres {
+        width: 300px;
+        text-align: center;
+    }
+
+    .footer_text {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .leader_cardbox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin-bottom: 20px;
+    }
+
+    .leader_card {
+        flex-direction: row;
+    }
+
+    .leader_card_textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .leader_card_cost {
+        padding: 5px 20px;
+    }
+
+    .leader_card {
+        padding: 30px;
+    }
+
+    .leader_card_cost {
+        top: 10px;
+        left: 10px;
+    }
+
+    .leader_card_heard {
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+
+    .leader_card_shop {
+        top: 10px;
+        right: 65px;
+        padding: 10px;
+    }
+
+    .line {
+        margin-top: 10px;
+    }
+
+    .intro_card_mini {
+        padding: 50px;
+    }
+
+    .intro_card_cost {
+        padding: 5px 20px;
+    }
+
+    .leader_card {
+        gap: 0;
+    }
+
+    .news_card_info {
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+
+    .news_card {
+        text-align: center;
+        padding: 10px 25px 30px;
+    }
+
+    .news_card_title {
+        margin: 20px auto;
+        width: 300px;
+    }
+
+    .news_card_text {
+        margin: 20px 0 40px;
+    }
+
+    .news_box {
+        margin-bottom: 40px;
+    }
+
+    .intro {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        gap: 15px;
+    }
+
+    .intro_cards {
+        gap: 15px;
+    }
+
+    .footer_info {
+        align-items: center;
+    }
+
+    .footer_list {
+        align-items: center;
+    }
+
+    .intro_card_mini {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        padding-top: 20px;
+    }
+
+    .footer_logo {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .footer_mini_title {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer_mini_contact {
+        font-size: 20px;
+    }
+
+    .footer_addres {
+        margin-top: 10px;
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .footer_text {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .footer_tel {
+        font-size: 16px;
+    }
+
+    .footer_info {
+        gap: 10px;
+    }
+
+    .footer_list {
+        gap: 10px;
+    }
+
+    .footer_images {
+        gap: 15px;
+    }
+
+    .footer_link {
+        font-size: 16px;
+    }
+
+    .intro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .intro_cards {
+        gap: 10px;
+    }
+
+    .leader_title {
+        font-size: 26px;
+    }
+
+    .leader_cardbox {
+        margin-top: 10px;
+    }
+
+    .more_title {
+        margin-bottom: 20px;
+    }
+
+    .leader_cardbox {
+        margin-bottom: 5px;
+    }
+
+    .news_box {
+        margin-top: 20px;
+    }
+
+    .leader_cardbox {
+        gap: 10px;
+    }
+
+    .leader_card {
+        padding: 10px;
+    }
+
+    .leader_card_cost {
+        bottom: 10px;
+        right: 10px;
+        top: inherit;
+        left: inherit;
+    }
+
+    .intro_card_img {
+        margin: 0;
+    }
+
+    .intro_card_mini {
+        max-width: 450px;
+    }
+
+    .intro_card_cost {
+        left: 10px;
+        top: 10px;
+    }
+
+    .leader_card_title {
+        font-size: 18px;
+    }
+
+
+    .leader_card_name {
+        font-size: 18px;
+    }
+
+    .leader_card_summa {
+        font-size: 18px;
+    }
+
+    .leader_card_textbox {
+        gap: 5px;
+    }
+
+    .intro_card_mini {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro_cards {
+        flex-direction: row;
+    }
+    .intro_card_mini {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .intro_card_mini {
+        flex-direction: column;
+        width: 50%;
+    }
+    .intro_card_cost {
+        bottom: 0;
+        top: inherit;
+    }
+    .big_img {
+        width: 160px;
+    }
+    .intro_card_big {
+        width: 50%;
+    }
+    .intro_card_cost {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 5px;
+    }
+    .leader_cardbox {
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .leader_card {
+        flex-shrink: 0;
+    }
+    .header_list_img {
+        gap: 20px;
+    }
+    .more_title {
+        display: none;
+    }
+    .news_title {
+        margin-top: 15px;
+    }
+    .news_card_info  {
+        padding: 5px 8px;
+    }
+    .news_card {
+        padding: 5px 20px 30px;
+    }
+    .news_card_title {
+        margin: 10px auto;
+    }
+    .news_card_text {
+        margin: 10px 0 20px;
+    }
+    .footer_link, .footer_addres, .footer_tel, .footer_email, .footer_text, .footer_images {
+        display: none;
+    }
+    .footer {
+        padding-bottom: 5px;
+    }
+}
