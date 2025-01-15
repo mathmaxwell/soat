@@ -52,6 +52,32 @@
     font-size: 18px;
     text-transform: capitalize;
     color: #323232;
+    transition: 0.5s;
+}
+
+.header_link:hover {
+    color: red;
+}
+
+.header_link span {
+    display: block;
+    padding: 0 15px;
+}
+
+.header_link::after,
+.header_link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    transform: scale(0);
+    transition: 0.5s;
+    background: black;
+}
+
+.header_link:hover::after,
+.header_link:hover::before {
+    transform: scale(1);
 }
 
 .header_list_img {
@@ -60,13 +86,54 @@
     gap: 40px;
 }
 
+
+
+.image_list {
+    display: none;
+}
+
+.hidden_img {
+    width: 33px;
+    height: 33px;
+}
+
+
 .header_link_img {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
     color: #323232;
+    transition: 0.5s;
 }
+
+.header_link_img:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.header_link_img:hover .heard {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(99%) saturate(7497%) hue-rotate(357deg) brightness(101%) contrast(102%);
+    transition: filter 0.3s ease;
+}
+
+.header_link_img:hover .shop {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(474%) hue-rotate(90deg) brightness(92%) contrast(95%);
+    transition: filter 0.3s ease;
+}
+
+.header_link_img:hover .human {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(98%) saturate(1200%) hue-rotate(200deg) brightness(90%) contrast(100%);
+    transition: filter 0.3s ease;
+}
+
+
+.header_link_img:hover .lupa {
+    filter: brightness(0) saturate(100%) invert(75%) sepia(19%) saturate(1200%) hue-rotate(180deg) brightness(90%) contrast(85%);
+    transition: filter 0.3s ease;
+}
+
+
 
 .birinchi_element {
     margin-left: 50px;
@@ -127,7 +194,6 @@
     position: absolute;
     top: 16px;
     left: 22px;
-    background: #323232;
     padding: 11px 39px;
     border-radius: 10px;
     font-family: var(--font-family);
@@ -135,6 +201,23 @@
     font-size: 22px;
     text-transform: capitalize;
     color: #fff;
+    background: linear-gradient(90deg, #323232, red, green, #323232);
+    animation: rang 3s linear infinite;
+}
+
+.leader_card_cost {
+    background: linear-gradient(90deg, #323232, red, green, #323232);
+    animation: rang 3s linear infinite;
+}
+
+@keyframes rang {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .intro_card_textbox {
@@ -157,6 +240,12 @@
     font-weight: 400;
     font-size: 16px;
     color: #323232;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.intro_card_textbox_text:hover {
+    scale: 1.1;
 }
 
 .intro_card_textbox_name {
@@ -165,6 +254,12 @@
     font-size: 16px;
     text-transform: uppercase;
     color: #000;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.intro_card_textbox_name:hover {
+    scale: 1.2;
 }
 
 .intro_card_textbox_cost {
@@ -208,11 +303,16 @@
     text-align: center;
 }
 
+.leader_card_textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .leader_card_cost {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: #323232;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
@@ -229,6 +329,11 @@
     background-color: white;
     padding: 16px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.leader_card_heard:hover {
+    background-color: red;
 }
 
 .leader_card_shop {
@@ -238,6 +343,11 @@
     background-color: white;
     padding: 16px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.leader_card_shop:hover {
+    background-color: #3fc5b3;
 }
 
 .leader_card_title {
@@ -245,6 +355,12 @@
     font-weight: 400;
     font-size: 20px;
     color: #323232;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.leader_card_title:hover {
+    scale: 1.1;
 }
 
 .leader_card_name {
@@ -253,6 +369,12 @@
     font-size: 20px;
     text-transform: uppercase;
     color: #000;
+    scale: 1;
+    transition: 0.3s;
+}
+
+.leader_card_name:hover {
+    scale: 1.2;
 }
 
 .leader_card_summa {
@@ -294,7 +416,6 @@
 .news_card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -302,6 +423,7 @@
     border-radius: 10px;
     padding: 20px 110px 60px 20px;
     text-align: left;
+    justify-content: space-between;
 }
 
 .news_card:nth-child(1) {
@@ -321,10 +443,14 @@
     padding: 13px 30px;
     background-color: #fff;
     border-radius: 8px;
-    margin: 20px;
     width: 150px;
+    margin-bottom: 40px;
+    transition: 0.3s;
 }
-
+.news_card_info:hover {
+    background-color: #9d9797;
+    color: #FFF;
+}
 
 .news_card_title {
     font-family: var(--font-family);
@@ -375,6 +501,11 @@
     justify-content: space-between;
 }
 
+.footer_hidden {
+    display: none;
+}
+
+
 .footer_list {
     display: flex;
     flex-direction: column;
@@ -385,10 +516,16 @@
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 32px;
-    line-height: 72%;
+    line-height: 100%;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 40px;
+    transition: 0.3s;
+    scale: 1;
+}
+.footer_logo:hover {
+    color: #E1E1E1;
+    scale: 1.2;
 }
 
 .footer_link {
@@ -407,6 +544,12 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
+    transition: 0.3s;
+    scale: 1;
+}
+.footer_mini_title:hover {
+    color: #E1E1E1;
+    scale: 1.2;
 }
 
 .footer_mini_contact {
@@ -416,12 +559,19 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
+    transition: 0.3s;
+    scale: 1;
+}
+.footer_mini_contact:hover {
+    color: #E1E1E1;
+    scale: 1.2;
 }
 
 .footer_info {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: flex-start;
 }
 
 .footer_addres {
